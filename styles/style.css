@@ -1,0 +1,77 @@
+/* font import */
+@font-face {
+    font-family: vazirNormal;
+    src: url(../fonts/vazir.ttf);
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url(../fonts/vazir-bold.ttf);
+}
+
+* {
+    font-family: vazirNormal;
+}
+
+/* body styles */
+body {
+    direction: rtl;
+}
+
+/* container styles */
+.container {
+    background-color: white;
+    width: 70%;
+    height: 400px;
+    text-align: center;
+    margin: 100px auto;
+    border-radius: 25px;
+    position: relative;
+    -webkit-box-shadow: 2px 5px 17px 5px rgba(0,0,0,0.62); 
+    box-shadow: 2px 5px 17px 5px rgba(0,0,0,0.62);
+}
+
+/* make form in middle of container */
+.container .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.container input {
+    border: none;
+    outline: none;
+    padding: 7px 12px 7px 15px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #c4c4c4;
+    margin: 0;
+    display: inline-block;
+}
+
+.container input:focus {
+    border: 1px solid #968b8b;
+}
+
+.container button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    display: inline-block;
+    margin: -5px;
+    transition: 0.25s;
+    font-family: vazirBold !important;
+}
+
+.container button:hover {
+    transition: 0.25s;
+    background-color: rgb(15, 15, 136);
+    cursor: pointer;
+}
+
+.container span {
+    margin-top: 25px;
+    display: block;
+}
